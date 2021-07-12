@@ -1,5 +1,5 @@
 :root{
-    --bg-white: rgba(255, 254, 253, 0.8);
+    --bg-white: rgba(255, 254, 253, 0.7);
     --col-primario: rgba(241, 151, 151, 1);
     --box-sha: 0px 0px 15px 0px gray;
     --border-rad: 20px;
@@ -8,7 +8,8 @@
 *{
     margin: 0;
     padding: 0;
-    font-family: 'Advent Pro', sans-serif;
+    /* font-family: 'Advent Pro', sans-serif; */
+    font-family: 'Rancho', cursive;
     letter-spacing: 2px;
 }
 
@@ -30,7 +31,7 @@
     width: 100%;
     box-shadow: 0px 0px 17px 1px gray;
     align-items: center;
-    padding: 30px 0px 5px 0px;
+    padding: 30px 0px 10px 0px;
     z-index: 1000;
     background-color:var(--bg-white);
     backdrop-filter: blur(2px);
@@ -50,7 +51,7 @@
     align-items: center;
 }
 #logo img{
-    height: 45px;
+    height: 2.8125rem;
     padding: 0 20px 0 10px;
 }
 #logo:hover{
@@ -58,7 +59,7 @@
     transition: 0.6s;
 }
 .nav__li {
-    font-size: 20px;
+    font-size: 1.5625rem;
     padding: 8px 20px;
     margin-right: 10px ;
 }
@@ -86,6 +87,7 @@
     height: 40px;
     border-radius: 20px;
     border: 1px solid grey;
+    font-size: 1.25rem;
     
 }
 
@@ -178,6 +180,7 @@ section#titulo{
     display: flex;
     align-items: center;
     justify-content: center;
+    text-align: center;
    
 }
 .caja__inicio {
@@ -185,7 +188,6 @@ section#titulo{
     border-radius: 20px;
     text-align: center;
     display:flex;
-    padding: 30px;
     flex-direction: column;
     background-color: var(--bg-white);
     backdrop-filter: blur(2px);
@@ -193,6 +195,7 @@ section#titulo{
     animation-duration: 1s;
     animation-fill-mode: both;
     animation:pulse 2s both infinite;
+    padding: 1.875rem 5rem;
     }
     
     @keyframes pulse{
@@ -210,15 +213,15 @@ section#titulo{
 
 h1{
     color: var(--col-primario);
-    font-size: 5rem;
-    width: 31.25rem;
+    font-size: 6.3rem;
+    max-width: 31.25rem;
     text-align: center;
-    text-shadow: 2px 2px 2px black;
+    text-shadow: 3px 3px 1px black;
 }
 h3{
     color: var(--col-primario);
-    font-size: 2rem;
-    width: 31.25rem;
+    font-size: 2.2rem;
+    max-width: 31.25rem;
     text-shadow: 2px 2px 2px black;
 }
 section#subtitulo{
@@ -233,11 +236,11 @@ h4{
     text-shadow: 2px 2px 2px black;
     color: white;
     font-size: 2rem;
-    width: 31.25rem;
+    max-width: 31.25rem;
     box-shadow: 0px 0px 15px 0px gray;
     border-radius: 20px;
     text-align: center;
-    padding: 20px;
+    padding: 1.25rem 5rem;
     backdrop-filter: blur(2px);   
 }
 section#info {
@@ -245,37 +248,39 @@ section#info {
     display: flex;
     text-align: center;
     justify-content: center;
+    align-items: center;
 }
 
 .descripcion{
     color: #000;
     font-size: 1.25rem;
-    height: 7rem;
-    width: 28.125rem;
-    padding: 20px;
+    max-width: 28.125rem;
+    padding: 1.25rem;
     box-shadow: 0px 0px 15px 0px gray;
     border-radius: 20px;
-    text-align: center;
-    justify-content: center;
     background-color: rgba(255, 254, 253, 0.6);
     backdrop-filter: blur(2px);
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
 }
 
 /* titulos de las secciones  */
 
 .titulos {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
     box-shadow: 0px 0px 15px 0px gray;
     border-radius: 20px;
-    text-align: center;
     display:flex;
-    flex-wrap: wrap;
     max-width: 31.25rem;
-    padding: 30px;
+    padding: 1.875rem;
     margin: 50px auto;
     background-color: rgba(255, 254, 253, 0.5);
     backdrop-filter: blur(2px); 
-    
-    
 }
 
 /* 2da seccion Conocenos*/
@@ -298,8 +303,8 @@ section#info {
 }
 .cont__conocenos h6 {
     color:var(--col-primario);
-    font-size: 2.5rem;
-    padding-bottom: 20px;    
+    font-size: 3.5rem;
+    padding-bottom: 1.25rem;    
 }
 .conocenos {   
     display: flex;
@@ -307,11 +312,13 @@ section#info {
     justify-content: space-evenly;
     flex-wrap: wrap;
 }
-.conocenos__text {
-    color:var(--col-primario);
-    font-size: 1.563rem;
+.conocenos__text p{
+    color:black;
+    font-size: 1.6rem;
     width: 100%;
     max-width: 37.5rem;
+    text-shadow: none;
+    letter-spacing: 1px;
 }
 .conocenos__mult img{
     max-width: 35rem; 
@@ -352,22 +359,22 @@ section#info {
      
 }
 .contenedor__text h5 {
-	font-size: 1.875rem;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif  ;
+	font-size: 2.3rem;
     color: white;
-    text-shadow: 3px 3px 3px black;
+    text-shadow: 2px 2px 1px black;
 }
 .contenedor__text{
     color: black;
+    font-size: 1.3rem;
 }
 
 .precio{
     padding-top: 5px;
-    font-family:Arial, Helvetica, sans-serif;
+    font-family: 'Crimson Text', serif;
     font-size: 1.6rem;
     font-weight: 1200;
     color: white;
-    text-shadow: 3px 3px 3px black;
+    text-shadow: 2px 2px 1px black;
 }
 .contenedor__imagen img{
 	width: 22rem;
@@ -390,8 +397,9 @@ section#info {
     color: black;
     border-radius: 20px;
     box-shadow: 0px 0px 15px 0px gray;
-    padding: 1px 30px;
-    font-family: Arial, Helvetica, sans-serif ;
+    padding: 0px 30px;
+    font-family: 'Rancho', cursive;
+    font-size: 25px;
     transition: 0.3s;
 }
 .contenedor__text-precio button:hover{
@@ -408,14 +416,16 @@ section#info {
 }
 .condiciones h2{
     color:var(--col-primario);
-    font-size: 2.5rem;
+    font-size: 3.5rem;
     text-shadow: 1px 2px 0px black;
     padding: 20px;
 }
 
 .condiciones p{
-    font-size: 1.25rem;
+    font-size: 1.5rem;
     padding: 20px;
+    font-family: 'Crimson Text', serif;
+    letter-spacing: .0625rem;
    
     
 }
@@ -476,7 +486,7 @@ section#info {
     }
     .titulo-promo h6{
         color:var(--col-primario);
-        font-size: 2.50rem;
+        font-size: 3rem;
         text-shadow: 1px 2px 0px black;
     }
     .container-imgp{
@@ -502,13 +512,14 @@ section#info {
     }
   
 .promo-p1 {
-    font-size: 10rem;
+    font-size: 9rem;
     color:white;
     text-shadow: 10px 10px 1px var(--col-primario);
     animation: oferta 4s linear infinite;
     transition: 0.01s;
     z-index: 100;
     position: absolute;
+    
 }
 
 @keyframes oferta{
@@ -541,13 +552,13 @@ section#info {
 
 }
 .promo-p2 {
-    font-size: 2rem;
+    font-size: 2.2rem;
     color:white;
     animation: oferta2 2s linear infinite;
     transition: 0.01s;
     z-index: 100;
     position: absolute;
-    bottom: 20px;
+    bottom: 1.25rem;
     text-shadow: 2px 2px 1px var(--col-primario);
 }
 @keyframes oferta2{
@@ -569,7 +580,6 @@ section#info {
     flex-wrap: wrap;
     align-items: center;
     justify-content: center;
-    text-shadow: 1px 1px 0px black;
     box-shadow: 0px 0px 15px 0px gray;
     border-radius: 20px;
     background-color: rgba(255, 254, 253, 0.5);
@@ -577,17 +587,17 @@ section#info {
     max-width: 1200px;
     padding: 30px 0;
     margin: auto;
+    
 
 }
-.contacto__info {
-    color:var(--col-primario);
+.contacto__info{
     font-size: 1.438rem;
-    text-shadow: 1px 1px 0px black;
     padding: 20px 0px;
     max-width: 600px;
     min-width: 300px;
     display: flex;
     flex-direction: column;
+    
 }
 .contacto__map {
     max-width: 37.5rem;
@@ -599,7 +609,7 @@ section#info {
     border-radius: 20px;
 }
 hr{
-    margin: 20px;
+    margin: 1.25rem 2.25rem 1.25rem 0rem;
     border: 2px solid var(--col-primario);
 }
 
@@ -608,7 +618,7 @@ hr{
 .clientes {
     background-color: rgba(255, 254, 253, 0.5);
     backdrop-filter: blur(2px);
-    text-shadow: 1px 1px 0px black;
+    text-shadow: 2px 2px 1px black;
     box-shadow: 0px 0px 15px 0px gray;
     border-radius: 20px;
     color: var(--col-primario);
@@ -616,7 +626,7 @@ hr{
     margin: 40px auto;
     width: 100%;
     max-width: 1200px;
-    font-size: 1.875rem;
+    font-size: 2.875rem;
 }
 .clientes p{
     text-align: center;
@@ -627,17 +637,23 @@ hr{
     flex-wrap: wrap;
     align-items: center;
     justify-content: space-evenly;
-    font-size: 1.25rem;
+    font-size: 1.4rem;
 }
 .clientes__form {
     max-width: 37.5rem;
     min-width: 18.75rem;
     width: 100%;
     padding: 10px;
+    color: black;
+    text-shadow: none;
+}
+.clientes__form input{
+    font-size: 1.2rem;
 }
 .clientes__form textarea {
     min-height: 70px;
     resize: none;
+    font-size: 1.2rem;
     
 }
 .clientes__img img{
@@ -662,9 +678,7 @@ hr{
     border: none;
     border-bottom: 3px solid black ;
     background: var(--col-primario);
-    color: white;
-    text-shadow: 1px 1px 0px black;
-    font-size: 1.25rem;
+    color:black;
     margin: 5px 0px;
     padding: 5px;
     border-radius: 20px;
@@ -702,7 +716,7 @@ footer{
     display: flex;
     align-items: center;
     justify-content: center;
-    font-size: 1.25rem;
+    font-size: 1.6rem;
 }
 .re-ico {
     grid-area: re-ico;
@@ -719,17 +733,20 @@ footer{
     font-size: 1.25rem;
     align-self: center;
     justify-self: center;
+    font-size: 1.6rem;
 }
 .cont-ico {
     grid-area: cont-ico;
     align-self: center;
     justify-self: center;
+    font-size: 1.1rem;
 }
 .ubicacion {
     grid-area: ubicacion;
     font-size: 1.25rem;
     align-self: center;
     justify-self: center;
+    font-size: 1.6rem;
 }
 .ubi-ico {
     grid-area: ubi-ico;
@@ -738,6 +755,7 @@ footer{
     align-items:center;
     justify-content: space-evenly;
     padding: 5px 5px 2px 30px;
+    font-size: 1.1rem;
 }
 .footer__li {
     list-style-type: none;
@@ -813,7 +831,7 @@ i{
 }
 @media screen and (max-width: 700px) {
     *{
-        font-size: 12px;
+        font-size: 14px;
     }
     
     .promo-p2{
@@ -821,9 +839,7 @@ i{
     }
 }
 @media screen and (max-width: 550px) {
-    *{
-        font-size: 8px;
-    }
+    
     .nav__li{
         padding: 3px 0px;
     }
