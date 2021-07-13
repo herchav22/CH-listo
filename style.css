@@ -10,7 +10,8 @@
     padding: 0;
     /* font-family: 'Advent Pro', sans-serif; */
     font-family: 'Rancho', cursive;
-    letter-spacing: 2px;
+    letter-spacing: .125rem;
+    font-size: 16px;
 }
 
 /* barra de navegacion */
@@ -42,6 +43,7 @@
     margin: auto;
     display: flex;
     flex-wrap: wrap;
+    font-size: 30px;
 }
 .nav-flex ul{
     list-style-type: none;
@@ -49,6 +51,7 @@
     margin: 0;
     display: flex;
     align-items: center;
+    
 }
 #logo img{
     height: 2.8125rem;
@@ -59,9 +62,10 @@
     transition: 0.6s;
 }
 .nav__li {
-    font-size: 1.5625rem;
+    
     padding: 8px 20px;
     margin-right: 10px ;
+    
 }
 .nav__li:hover{
     background-color:rgba(241, 151, 151, 0.7);
@@ -73,6 +77,7 @@
 .nav__li a{
     text-decoration: none;
     color: black;
+    font-size: 1.5625rem;
 }
 
 .nav-flex form {
@@ -353,17 +358,15 @@ section#info {
     color: white;
     text-shadow: 2px 2px 1px black;
 }
-.contenedor__text{
+
+.contenedor__text p{
     color: black;
     font-size: 1.3rem;
 }
 
-.precio{
-    padding-top: 5px;
-    font-family: 'Crimson Text', serif;
+#precio{
+    color: blanchedalmond;
     font-size: 1.6rem;
-    font-weight: 1200;
-    color: white;
     text-shadow: 2px 2px 1px black;
 }
 .contenedor__imagen img{
@@ -412,7 +415,7 @@ section#info {
 }
 
 .condiciones p{
-    font-size: 1.5rem;
+    font-size: 1.3rem;
     padding: 20px;
     font-family: 'Crimson Text', serif;
     letter-spacing: .0625rem;
@@ -580,9 +583,17 @@ section#info {
     
 
 }
-.contacto__info{
+.contacto__info {
     font-size: 1.438rem;
     padding: 20px 0px;
+    max-width: 600px;
+    min-width: 300px;
+    display: flex;
+    flex-direction: column;
+    
+}
+.contacto__info p{
+    font-size: 1.438rem;
     max-width: 600px;
     min-width: 300px;
     display: flex;
@@ -616,10 +627,11 @@ hr{
     margin: 40px auto;
     width: 100%;
     max-width: 1200px;
-    font-size: 2.875rem;
+    
 }
 .clientes p{
     text-align: center;
+    font-size: 2.875rem;
 }
 
 .clientes__contenedor {
@@ -627,7 +639,7 @@ hr{
     flex-wrap: wrap;
     align-items: center;
     justify-content: space-evenly;
-    font-size: 1.4rem;
+    
 }
 .clientes__form {
     max-width: 37.5rem;
@@ -636,10 +648,12 @@ hr{
     padding: 10px;
     color: black;
     text-shadow: none;
+    
 }
-.clientes__form input{
-    font-size: 1.2rem;
+.clientes__form label{
+    font-size: 1.4rem;
 }
+
 .clientes__form textarea {
     min-height: 70px;
     resize: none;
@@ -655,6 +669,7 @@ hr{
 }
 .clientes__form-li {
     list-style-type: none;
+    font-size: 1.4rem;
 }
 .clientes__form-input{
     width: 100%;
@@ -673,6 +688,7 @@ hr{
     padding: 5px;
     border-radius: 20px;
     font-weight: 800;
+    font-size: 1.4rem;
 }
 
 /* Footer */
@@ -749,6 +765,7 @@ footer{
 }
 .footer__li {
     list-style-type: none;
+    font-size: 1.1rem;
 }
 i{
     font-size: 2.5rem;
@@ -823,20 +840,26 @@ i{
     *{
         font-size: 14px;
     }
-    
     .promo-p2{
         display: none;
     }
+    
 }
-@media screen and (max-width: 550px) {
+@media screen and (max-width: 600px) {
     
     .nav__li{
         padding: 3px 0px;
+    
     }
     
    
     .contenedor-footer{
         display: flex;
         flex-direction: column;
+    }
+}
+@media screen and (max-width: 500px){
+    *{
+        font-size: 12px;
     }
 }
