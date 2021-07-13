@@ -148,35 +148,25 @@ body{
     padding-top: 100px ;    
     max-width: 1600px;
     margin: 0 auto;
-    min-height: 76.8vh;
+    
     font-size: 16px;
 }
 .pagina2 {
     padding-top: 100px ;    
     max-width: 1600px;
     margin: 0 auto;
-    min-height: 76.8vh;
+    
 }
 
 /* home */
 #home {
-    display: grid;
-    grid-template-areas:
-    "titulo" 
-    "subtitulo"
-    "informacion";
-    grid-template-rows: 1fr 1fr 1fr;
-    grid-template-columns: 1fr ;
-    grid-row-gap: 50px;
-    grid-column-gap:  40px;
-    height: 72.2vh;
+    display: flex;
+    flex-direction: column;
     padding: 15px;
     margin: -10px auto;
-    
 }
 section#titulo{
-    grid-area: titulo;
-    margin-top: 20px;
+    margin: 2.875rem 0 5rem 0;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -225,8 +215,8 @@ h3{
     text-shadow: 2px 2px 2px black;
 }
 section#subtitulo{
-    grid-area: subtitulo;
-    display: grid;
+    margin: 0 0 4.7rem 0;
+    display: flex;
     text-align: center;
     justify-self: center;
     align-self: center;    
@@ -244,7 +234,7 @@ h4{
     backdrop-filter: blur(2px);   
 }
 section#info {
-    grid-area: informacion;
+    margin: 0 0 3.75rem 0;
     display: flex;
     text-align: center;
     justify-content: center;
