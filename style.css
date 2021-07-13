@@ -12,6 +12,7 @@
     font-family: 'Rancho', cursive;
     letter-spacing: .125rem;
     font-size: 16px;
+    box-sizing: border-box;
 }
 
 /* barra de navegacion */
@@ -128,17 +129,22 @@ body{
     background-position: center;
     background-size: 105%;
     animation: movimiento 8s linear infinite alternate;
+    display: flex;
+    flex-wrap: wrap;
+    min-height: 100vh;
     
 }
 .b-inicio{
     background-image: url("https://i.postimg.cc/Hsd7NngV/fondo2.jpg");
 	background-repeat:repeat;
-    background-size:100%;
 	font-weight: bolder;
 	background-attachment: fixed;
     background-position: center;
     background-size: 120%;
     animation: movimiento 15s linear infinite alternate;
+    display: flex;
+    flex-wrap: wrap;
+    min-height: 100vh;
    
 }
 @keyframes movimiento{
@@ -171,7 +177,7 @@ body{
     margin: -10px auto;
 }
 section#titulo{
-    margin: 2.875rem 0 5rem 0;
+    margin: 2.875rem 0 3rem 0;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -220,7 +226,7 @@ h3{
     text-shadow: 2px 2px 2px black;
 }
 section#subtitulo{
-    margin: 0 0 4.7rem 0;
+    margin: 0 0 3.1rem 0;
     display: flex;
     text-align: center;
     justify-self: center;
@@ -231,15 +237,15 @@ h4{
     text-shadow: 2px 2px 2px black;
     color: white;
     font-size: 2rem;
-    max-width: 31.25rem;
+    max-width: 32.25rem;
     box-shadow: 0px 0px 15px 0px gray;
     border-radius: 20px;
     text-align: center;
-    padding: 1.25rem 5rem;
+    padding: 1.25rem 4.5rem;
     backdrop-filter: blur(2px);   
 }
 section#info {
-    margin: 0 0 3.75rem 0;
+    margin: 0 0 2.5rem 0;
     display: flex;
     text-align: center;
     justify-content: center;
@@ -272,8 +278,8 @@ section#info {
     border-radius: 20px;
     display:flex;
     max-width: 31.25rem;
-    padding: 1.875rem;
-    margin: 50px auto;
+    padding: 0.875rem;
+    margin: 3.125rem auto;
     background-color: rgba(255, 254, 253, 0.5);
     backdrop-filter: blur(2px); 
 }
@@ -287,19 +293,20 @@ section#info {
     margin: 40px auto ;
     width: 100%;
     max-width: 75rem;
-    padding: 20px 0;
+    padding: 1.25rem 0;
     background-color: rgba(255, 254, 253, 0.5);
     backdrop-filter: blur(2px); 
     display: flex;
     flex-wrap: wrap;
     align-items: center;
     justify-content: space-evenly;
+    box-sizing: border-box;
     
 }
 .cont__conocenos h6 {
     color:var(--col-primario);
     font-size: 3.5rem;
-    padding-bottom: 1.25rem;    
+    padding-bottom: .25rem;    
 }
 .conocenos {   
     display: flex;
@@ -314,15 +321,22 @@ section#info {
     max-width: 37.5rem;
     text-shadow: none;
     letter-spacing: 1px;
+    box-sizing: border-box;
+    padding: 1.25rem;
 }
 .conocenos__mult img{
     max-width: 35rem; 
     padding: 10px;
     border-radius: 20px;
+    box-sizing: border-box;
+    width: 100%;
 }
 .conocenos__mult iframe{
     border-radius: 20px;
-    max-width: 35rem;
+    width: 30rem;
+    box-sizing: content-box;
+    padding: auto;
+    
 }
 
 /* 3ra seccion productos */
@@ -365,12 +379,13 @@ section#info {
 }
 
 #precio{
-    color: blanchedalmond;
+    color: white;
     font-size: 1.6rem;
     text-shadow: 2px 2px 1px black;
 }
 .contenedor__imagen img{
-	width: 22rem;
+	max-width: 352px;
+    width: 100%;
 }
 .contenedor:hover{
     transform: scale(1.1);
@@ -578,8 +593,9 @@ section#info {
     background-color: rgba(255, 254, 253, 0.5);
     backdrop-filter: blur(2px); 
     max-width: 1200px;
-    padding: 30px 0;
+    padding: 30px 10px;
     margin: auto;
+    box-sizing: border-box;
     
 
 }
@@ -627,6 +643,7 @@ hr{
     margin: 40px auto;
     width: 100%;
     max-width: 1200px;
+    box-sizing: border-box;
     
 }
 .clientes p{
@@ -639,6 +656,7 @@ hr{
     flex-wrap: wrap;
     align-items: center;
     justify-content: space-evenly;
+    box-sizing: border-box;
     
 }
 .clientes__form {
@@ -648,6 +666,7 @@ hr{
     padding: 10px;
     color: black;
     text-shadow: none;
+    box-sizing: border-box;
     
 }
 .clientes__form label{
@@ -663,7 +682,7 @@ hr{
 .clientes__img img{
     width: 98%;
     max-width: 29rem;
-    min-width: 15.625rem; 
+    min-width: 13.625rem; 
     padding: 10px;
     
 }
@@ -698,6 +717,9 @@ footer{
     box-shadow: 0px 0px 15px 0px gray;
     z-index: 900;
     
+    display: flex;
+    align-self: flex-end;
+    
 }
 .contenedor-footer {
     display: grid;
@@ -711,10 +733,11 @@ footer{
     color:black;
     padding: 10px;
     backdrop-filter: blur(2px);
-    width: 100wv;
+    width: 100vw;
     max-width: 1600px;
     margin: auto;
-    bottom: 0;
+   
+    
 }
 
 .redes {
@@ -723,6 +746,7 @@ footer{
     align-items: center;
     justify-content: center;
     font-size: 1.6rem;
+    padding-top: 1.625rem;
 }
 .re-ico {
     grid-area: re-ico;
@@ -740,6 +764,7 @@ footer{
     align-self: center;
     justify-self: center;
     font-size: 1.6rem;
+    padding-top: 1.625rem;
 }
 .cont-ico {
     grid-area: cont-ico;
@@ -753,6 +778,7 @@ footer{
     align-self: center;
     justify-self: center;
     font-size: 1.6rem;
+    padding-top: 1.625rem;
 }
 .ubi-ico {
     grid-area: ubi-ico;
@@ -846,20 +872,68 @@ i{
     
 }
 @media screen and (max-width: 600px) {
+    body{
+        background-image: url("https://i.postimg.cc/sDqmXhWx/fondoresponsive.jpg");
+    }
+    .b-inicio{
+        background-size:260%;
+    }
+    @keyframes movimiento{
+        from{
+            background-position:  left;
+        }
+        to{
+            background-position:  right;
+        }
+    }
     
     .nav__li{
         padding: 3px 0px;
     
     }
+
+    .productos{
+        
+    }
+    .contenedor{
+        width: 100%;
+        max-width: 28.25rem;
+    }
+    .contenedor__imagen img{
+        max-width: 100%;
+        width: auto;
+    }
+
     
    
     .contenedor-footer{
         display: flex;
         flex-direction: column;
     }
+    .re-ico i{
+        padding: 0 20px;
+    }
 }
 @media screen and (max-width: 500px){
     *{
         font-size: 12px;
     }
+    .caja__inicio {
+        padding: 20px 30px;
+    }
+    h1{
+        font-size: 5.3rem;
+        
+    }
+     .conocenos__mult iframe{
+        width: 300px;
+        height: 18.75rem;
+        border-radius: 20px;
+    }
+    .contacto iframe{
+        width: 300px;
+        height: 18.75rem;
+        border-radius: 20px;
+    }
+
 }
